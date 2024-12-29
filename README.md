@@ -32,7 +32,7 @@ Then Install conda following below steps
 
 ## Step2 : Data Version Control and storing the dataset version in AWS S3 bucket and storing the dataset version in AWS S3 bucket
 Run below commands to do version control of gemstone.csv file
-'''
+```
 1. dvc remote add -d remote/storage url s3://gemstone-dataset
 2. dvc add dataset/gemstone.csv
 3. git add .
@@ -44,7 +44,7 @@ Run below commands to do version control of gemstone.csv file
 9. git commit -m "dremoved 10 records from bottomm" it will create new log with commit id f7d5730
 10. git checkout it checkout 9181213 -> if we want to restore to original form of gemstone.csv and want 10 records back
 11. dvc checkout -> it will restore the dataset to its original form
-'''
+```
 ![image](https://github.com/user-attachments/assets/4a2160ef-7802-4b6a-a5f3-a0decf0372c9)
 
 12. make changes to gemstone.csv file by adding 2 records at the bottom and run command **dvc status** you will see file has been changed
@@ -56,7 +56,19 @@ Run below commands to do version control of gemstone.csv file
 17.  dvc push -> it will push the dataset  and its version to S3 bucket
   ![image](https://github.com/user-attachments/assets/38360a8f-d108-49b2-ac52-4e7b2ddb7e7e)
 
-## Step3 : Run Training Pipeline
+## Step3 : Data Version Control for Pipeline
+Run below commands to do version control of gemstone.csv file
+```
+1. add airflow/training_pipeline.py
+2. add dvc.yaml which has all the stages
+3. dvc repro
+4. dvc show
+```
+![image](https://github.com/user-attachments/assets/20a16b88-cb41-4d86-ba71-81b50dcd9496)
+
+
+
+## Step 4 : Run Training Pipeline
 To train the model follow below steps
 ```
 1. mlflow server --host 127.0.0.1 --port 7070(It needs to be executed in one terminal and it should keep on running)
@@ -85,7 +97,7 @@ This is how the Experiments should look in **MLFLOW**
 ![image](https://github.com/user-attachments/assets/5ec294e0-daa2-4552-9d23-6910342945ff)
 
 
-## Step3 : Prediction
+## Step 5 : Prediction
 To see the prediction of prices following below steps
 ```
 1. python .\app.py
