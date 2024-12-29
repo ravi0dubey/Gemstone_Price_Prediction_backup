@@ -73,10 +73,7 @@ Run below commands to do version control of gemstone.csv file
 
 ![image](https://github.com/user-attachments/assets/23e21bec-a25c-492c-b06d-4cf074811e35)
 
-
-![image](https://github.com/user-attachments/assets/1d27e15f-d87c-4539-b1db-a48ba0002f8b)
-
-
+![image](https://github.com/user-attachments/assets/40641a66-a237-45dd-b5b2-79a223cfddd9)
 
 
 
