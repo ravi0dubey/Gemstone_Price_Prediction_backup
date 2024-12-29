@@ -46,14 +46,17 @@ Run below commands to do version control of gemstone.csv file
 11. dvc checkout -> it will restore the dataset to its original form
 ```
 ![image](https://github.com/user-attachments/assets/4a2160ef-7802-4b6a-a5f3-a0decf0372c9)
-
+```
 12. make changes to gemstone.csv file by adding 2 records at the bottom and run command **dvc status** you will see file has been changed
+```
 ![image](https://github.com/user-attachments/assets/95f3fe12-a6e8-4521-b024-3564d0567f4c)
+```
 13. dvc add dataset/gemstone.csv
 14. git add .
 15. git commit -m "added 2 records in gemstone.csv under dvc" it will create new log 
 16.  git push origin main
 17.  dvc push -> it will push the dataset  and its version to S3 bucket
+```
   ![image](https://github.com/user-attachments/assets/38360a8f-d108-49b2-ac52-4e7b2ddb7e7e)
 
 ## Step3 : Data Version Control for Pipeline
