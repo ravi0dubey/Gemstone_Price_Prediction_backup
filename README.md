@@ -72,6 +72,9 @@ Run below commands to do version control of gemstone.csv file
 **Data Pipeline in Airflow**
 ![image](https://github.com/user-attachments/assets/62c34922-460d-42d0-97ea-4396c718b871)
 
+![image](https://github.com/user-attachments/assets/23e21bec-a25c-492c-b06d-4cf074811e35)
+
+
 
 
 ## Step 4 : Run Training Pipeline manually
