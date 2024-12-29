@@ -69,9 +69,12 @@ Run below commands to do version control of gemstone.csv file
 ```
 ![image](https://github.com/user-attachments/assets/20a16b88-cb41-4d86-ba71-81b50dcd9496)
 
+**Data Pipeline in Airflow**
+![image](https://github.com/user-attachments/assets/62c34922-460d-42d0-97ea-4396c718b871)
 
 
-## Step 4 : Run Training Pipeline
+
+## Step 4 : Run Training Pipeline manually
 To train the model follow below steps
 ```
 1. mlflow server --host 127.0.0.1 --port 7070(It needs to be executed in one terminal and it should keep on running)
