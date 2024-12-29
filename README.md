@@ -69,8 +69,11 @@ Run below commands to do version control of gemstone.csv file
 ```
 ![image](https://github.com/user-attachments/assets/20a16b88-cb41-4d86-ba71-81b50dcd9496)
 
-**Data Pipeline in Airflow**
+** Training  Pipeline in Airflow**
+
 ![image](https://github.com/user-attachments/assets/62c34922-460d-42d0-97ea-4396c718b871)
+
+![image](https://github.com/user-attachments/assets/1d27e15f-d87c-4539-b1db-a48ba0002f8b)
 
 ![image](https://github.com/user-attachments/assets/23e21bec-a25c-492c-b06d-4cf074811e35)
 
