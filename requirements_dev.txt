@@ -1,0 +1,19 @@
+pandas
+scikit-learn
+numpy
+seaborn 
+flask
+mlflow==2.19.0
+dvc
+ipykernel
+xgboost
+pymongo
+pytest==7.1.3
+tox==3.25.1
+black==22.8.0
+flake8==5.0.4
+mypy==0.971
+ipykernel
+apache-airflow
+uvicorn==0.32.0
+-e .

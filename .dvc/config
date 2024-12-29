@@ -1,0 +1,4 @@
+[core]
+    remote = remote/storage
+['remote "remote/storage"']
+    url = s3://gemstone-dataset
