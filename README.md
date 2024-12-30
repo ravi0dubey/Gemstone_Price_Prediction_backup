@@ -73,6 +73,8 @@ Run below commands to do version control of gemstone.csv file
 
 ![image](https://github.com/user-attachments/assets/23e21bec-a25c-492c-b06d-4cf074811e35)
 
+**DAG pipeline executed successfully for each components**
+
 ![image](https://github.com/user-attachments/assets/40641a66-a237-45dd-b5b2-79a223cfddd9)
 
 **Logs of Model Evaluation** which gives link to MLFLOW to verify the Experiment running from DAG
