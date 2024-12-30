@@ -75,6 +75,9 @@ Run below commands to do version control of gemstone.csv file
 
 ![image](https://github.com/user-attachments/assets/40641a66-a237-45dd-b5b2-79a223cfddd9)
 
+**Logs of Model Evaluation** which gives link to MLFLOW to verify the Experiment running from DAG
+
+![image](https://github.com/user-attachments/assets/ece12d31-9319-4396-a9d8-ca91c46905f4)
 
 
 
