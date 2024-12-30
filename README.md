@@ -81,6 +81,9 @@ Run below commands to do version control of gemstone.csv file
 
 ![image](https://github.com/user-attachments/assets/ece12d31-9319-4396-a9d8-ca91c46905f4)
 
+**Experiment snapshot of MLFLOW which got triggered from airflow**
+![image](https://github.com/user-attachments/assets/ffbc56b0-70b8-4ef5-894e-59e99b270276)
+
 
 
 ## Step 4 : Run Training Pipeline manually
