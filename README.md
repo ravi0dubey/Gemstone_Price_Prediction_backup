@@ -115,12 +115,20 @@ This is how the Experiments should look in **MLFLOW**
 ![image](https://github.com/user-attachments/assets/5ec294e0-daa2-4552-9d23-6910342945ff)
 
 
-## Step 5 : Prediction
-To see the prediction of prices following below steps
+## Step 5 : Prediction can be done manually or through the conatainer
+
+### Option 1: To do the prediction when container is up
+```
+1. run http://localhost:8012/ to see the main screen
+2. run http://localhost:8012/predict for prediction
+4. Enter the different input values and then press Submit button
+5. You should see predicted price of stone.
+```
+### Option 2: To do the prediction manually follow below steps
 ```
 1. python .\app.py
 2. run http://localhost:8012/ to see the main screen
-3. copy http://localhost:8012/predict to new window
+3. run http://localhost:8012/predict for prediction
 4. Enter the different input values and then press Submit button
 5. You should see predicted price of stone.
 ```
