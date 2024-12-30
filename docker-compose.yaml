@@ -1,17 +1,14 @@
 version: "3.8"
 services:
-  gemstone_prediction:
+  airflow:
     build: .
-    image: ${IMAGE_NAME}
-    container_name: gemstone_prediction
+    image: airflow-image
+    container_name: gemstone_prediction_airflow
     ports:
       - "8080:8080"    # Expose Airflow web UI
       - "7071:7071"    # Expose MLflow server
     environment:
-      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
-      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
-      - BUCKET_NAME=${BUCKET_NAME}
       - MLFLOW_TRACKING_URI=http://127.0.0.1:7071  # Add the MLflow URI
+
 
       
