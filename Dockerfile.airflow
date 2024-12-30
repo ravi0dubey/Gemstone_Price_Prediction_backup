@@ -10,6 +10,6 @@ ENV AIRFLOW__CORE__ENABLE_XCOM_PICKLING=True
 RUN airflow db init 
 RUN airflow users create  -e ravidatascience4@gmail.com -f Ravi -l Dubey -p admin -r Admin  -u admin
 RUN chmod +x start.sh
-RUN apt update -y && apt install awscli -y
+RUN apt-get update -y && apt-get install -y docker.io awscli
 ENTRYPOINT [ "/bin/sh" ]
 CMD ["start.sh"]

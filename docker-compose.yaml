@@ -1,7 +1,8 @@
-version: "3.8"
 services:
   airflow:
-    build: .
+    build: 
+      context: ./
+      dockerfile: Dockerfile.airflow
     image: airflow-image
     container_name: gemstone_prediction_airflow
     ports:
@@ -9,6 +10,19 @@ services:
       - "7071:7071"    # Expose MLflow server
     environment:
       - MLFLOW_TRACKING_URI=http://127.0.0.1:7071  # Add the MLflow URI
+                       # Persist Airflow logs
 
+  flask-app:
+    build:
+      context: ./
+      dockerfile: Dockerfile.flask
+    image: flask-app-image
+    container_name: gemstone_prediction_flask
+    ports:
+      - "8012:8012"    # Expose Flask app
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - .:/app                                 # Mount Flask app directory to container
 
       
