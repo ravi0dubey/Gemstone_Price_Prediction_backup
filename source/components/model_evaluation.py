@@ -37,7 +37,8 @@ class ModelEvaluation:
             model=load_object(model_path)
             train_npy_path=os.path.join("artifacts","train.npy")
             train_npy=load_numpy_array_data(train_npy_path)
-            mlflow.set_tracking_uri(uri="http://127.0.0.1:7071")     
+            # mlflow.set_tracking_uri(uri="http://127.0.0.1:7071")    
+            mlflow.set_tracking_uri(uri=os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:7071")) 
             mlflow.set_registry_uri("")     
             logging.info("model has register")
             tracking_url_type_store=urlparse(mlflow.get_tracking_uri()).scheme
