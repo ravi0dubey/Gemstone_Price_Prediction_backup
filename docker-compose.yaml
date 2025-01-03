@@ -24,5 +24,18 @@ services:
       - FLASK_ENV=development
     volumes:
       - .:/app                                 # Mount Flask app directory to container
+  
+  lambda:
+    build:
+      context: ./
+      dockerfile: Dockerfile.flask  # Dockerfile for Lambda
+    image: lambda-app-image
+    container_name: gemstone_prediction_lambda
+    ports:
+      - "9000:8080"  # Expose Lambda runtime emulator for local testing
+    environment:
+      - AWS_LAMBDA_RUNTIME_API=http://localhost:9000
+    entrypoint: ["/usr/local/bin/aws-lambda-rie"]
+    command: ["app.lambda_handler"]
 
       
