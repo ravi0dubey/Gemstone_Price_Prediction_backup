@@ -1,6 +1,14 @@
+# Use an AWS Lambda base image
 FROM public.ecr.aws/lambda/python:3.11
+
+# Set the working directory
 WORKDIR /var/task
+
+# Copy application files
 COPY . .
-RUN apt-get update -y && apt-get install -y docker.io
+
+# Install Python dependencies
 RUN pip3 install --no-cache-dir -r requirements_flask.txt
+
+# Specify the Lambda handler function
 CMD ["app.lambda_handler"]
